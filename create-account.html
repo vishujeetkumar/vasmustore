@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>Account-create</title>
+</head>
+
+<body
+    style="background-image: url(https://img.freepik.com/premium-photo/colorful-lights-street-bokeh-circle-with-blurred-background_454892-764.jpg); background-repeat: no-repeat;background-size: cover; ">
+    <h1 style="font-size: 30px; font-weight: bold; color: rgba(2, 10, 5, 0.659); text-align: center;">New User</h1>
+    <div style="text-align: justify;">
+        <form action="login-page.html" method="post" style="text-align: center;">
+            <fieldset style="font-style: italic;font-weight: bolder;font-family: monospace;font-size: large;">
+                <legend
+                    style="font-size: 20px; font-weight: bold; color: rgb(233, 231, 241);font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;background-image: url(lord-rama-anjaneya-3840x2160-18958.jpg);color:bisque;">
+                    Create Account</legend>
+                <label for="full name">Full name:</label>
+                <input type="text" id="full name" placeholder="Enter your name">
+                <br>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <br>
+                <br>
+                <label for="number">Phone Number:</label>
+                <input type="number" id="number" placeholder="Enter your phone number" pattern="[0-9]{10,15}" required>
+                <br>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+                <br>
+                <br>
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" placeholder="Enter Confirm password" required>
+                <br>
+                <br>
+                <label for="gender">Gender:</label>
+                <input type="radio" id="gender" name="gender" value="Male">
+                <label for="gender">Male</label>
+                <br>
+                <input type="radio" id="gender" name="gender" value="Female">
+                <label for="gender">Female</label>
+                <br>
+                <input type="radio" id="gender" name="gender" value="Other">
+                <label for="gender">other </label>
+                <br>
+                <br>
+                <label for="D.O.B">Date of Birth:</label>
+                <input type="date" id="D.O.B" required>
+                <br>
+                <br>
+                <label for="file">upload your photo</label>
+                <input type="file" id="file" required>
+                <br>
+                <br>
+
+                <label for="checkbox">I am above 18 years old</label>
+
+                <input type="checkbox" id="checkbox" required>
+                <br>
+                <br>
+                <input type="checkbox" id="t&c" required>
+                <label id="t&C" style="font-family: Arial, Helvetica, sans-serif"><a
+                        href="Terms&Conditions.html">Terms&conditions</a></label>
+
+                <br>
+                <input type="checkbox" id="policy" required>
+                <label id="policy" style="font-family: Arial, Helvetica, sans-serif"><a
+                        href="policy.html">Policy</a></label>
+
+                <br>
+                <a href="login-page.html" style="background-color: bisque;border-radius: 5xp;"> Alredy Registered </a>
+                <br>
+                <br>
+                <button type="submit" value="Submit" ,
+                    style="color: brown;padding: 8px;border-radius: 11px;font-size: 20px; border-color: rgb(106, 217, 217); background-color: rgb(175, 236, 216);font-style: oblique;font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                    Submit
+                </button>
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+
+</html>
