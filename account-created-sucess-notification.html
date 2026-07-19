@@ -5,29 +5,162 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accounted created</title>
+     <link rel="icon" href="image/icon.png" type="image/png">
+     <script>
+        // Function to show the modal (Call this after successful registration)
+function showWelcomeModal() {
+    document.getElementById('welcomeModal').style.display = 'flex';
+}
+
+// Function to close the modal
+function closeWelcomeModal() {
+    document.getElementById('welcomeModal').style.display = 'none';
+}
+
+// Function to copy the promo code
+function copyCoupon() {
+    navigator.clipboard.writeText("WELCOME20");
+    alert("Coupon code copied to clipboard! ✂️");
+}
+
+// Automatically trigger for testing (Remove this line in production)
+window.onload = showWelcomeModal;
+
+     </script>
+     <style>
+       /* Backdrop covering the whole screen */
+.modal-backdrop {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Central Popup Box */
+.modal-box {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Close Button (X) */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #888;
+}
+
+.emoji-icon {
+    font-size: 40px;
+}
+
+.modal-box h2 {
+    margin: 15px 0 10px;
+    color: #333;
+}
+
+.modal-box p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Coupon Box */
+.coupon-box {
+    background: #f3f4f6;
+    border: 2px dashed #4F46E5;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.code-text {
+    font-weight: bold;
+    font-size: 18px;
+    color: #4F46E5;
+    letter-spacing: 2px;
+}
+
+.coupon-box button {
+    background: #0b2edcd5;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sub-text {
+    font-size: 13px !important;
+    color: #999 !important;
+    margin-top: 5px;
+}
+
+/* Main Shop Button */
+.cta-btn {
+    display: inline-block;
+    background: #22c55e;
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background 0.2s;
+}
+
+.cta-btn:hover {
+    background: #16a34a;
+}
+
+     </style>
 
 </head>
 
 <body>
-    <div>
+   <!-- Welcome Modal Backdrop -->
+<div id="welcomeModal" class="modal-backdrop">
+    <!-- Modal Box -->
+    <div class="modal-box">
+        <button class="close-btn" onclick="closeWelcomeModal()">&times;</button>
+        <div class="modal-content">
+            <span class="emoji-icon">🎉</span>
+            <h2>Welcome to <span id="brandName">VASMU-STORE</span>!</h2>
+            <p>Thank you for creating an account</p>
+            <p> Here is a special gift just for you!</p>
+            
+            <!-- Coupon Code Box -->
+            <div class="coupon-box">
+                <span class="code-text"F>WELCOME20</span>
+                <button onclick="copyCoupon()">Copy</button>
+            </div>
+            
+            <p class="sub-text">Get 20% off on your first order</p>
+            <a href="/shop" class="cta-btn">Start Shopping Now</a>
+        </div>
+    </div>
+</div>
 
-        <h1
-            style="text-align: center; background-image: url(https://blog.logrocket.com/wp-content/uploads/2024/10/frosted-glass-effect-blur-backdrop.png?w=895);background-repeat: no-repeat;background-size:cover; color: aqua; ">
-            <br>
-            <br>
-            <br><br><br>
-            <P>Sucessfully 🎉🎊🎉accounted created</P>
-            <p> Thanks for showing your trust in our insitution 🏫</p>
-            <p>we are promise to you.</p>
-            <p>you will be never feel disappointment </p>
-            <p>Now you can shop smoothly</p>
-            <p>your order delevered in short time(in borking day)</p>
-            <br>
-            <button style="background-color: rgb(130, 200, 184);padding: 5xp; border-radius: 10xp;font-size: 10xp;"> <a
-                    href="login-page.html">Login Page</a> </button>
-            <br>
-            <br>
-        </h1>
     </div>
 </body>
 
