@@ -6,203 +6,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VASMU-STORE </title>
     <link rel="icon" href="image/icon.png" type="image/png">
+    <link rel="stylesheet" href="index.css">
 
 </head>
 
 <body>
 
     <!--------Header---------->
-    <header id="h25">
-        <link rel="stylesheet" href="index.css">
-        <img src="image/logo.png" style="width: 100xp; height: 100px; background-color: rgb(201, 203, 195);">
-        <p>we deliver 100% original and best quality product</p>
+    <header id="topbutton">
+        <div>
+            <a href="index.html"><img src="image/logo.png"
+                    style="width: 100xp; height: 100px; background-color: rgb(201, 203, 195);"></a>
+        </div>
+        <div>
+            <!----navigation---->
+            <nav>
+                <button><a href="index.html">HOME</a></button>
+                <button><a href="index.html#product">PRODUCT</a></button>
+                <button><a href="cart.html">CART</a></button>
+                <button><a href="create-account.html">NEW USER</a></button>
+                <button><a href="login.html">LOGIN</a></button>
+                <button><a href="contactUs.html">CONTACT Us</a></button>
+                <button><a href="complain.html">COMPLAIN Us</a></button>
+            </nav>
+
+        </div>
+
     </header>
-    <div>
-        <!----navigation---->
-        <nav>
-            <button><a href="index.html">HOME</a></button>
-            <button><a href="index.html#product">PRODUCT</a></button>
-            <button><a href="cart.html">CART</a></button>
-            <button><a href="create-account.html">NEW USER</a></button>
-            <button><a href="login.html">LOGIN</a></button>
-            <button><a href="contactUs.html">CONTACT Us</a></button>
-            <button><a href="complain.html">COMPLAIN Us</a></button>
-        </nav>
 
-    </div>
-    <a href="#h25" id="Top">TOP</a>
-
-
+    <a href="#topbutton" id="Top">TOP</a>
     <!----------main--------------->
 
     <main>
-        <div>
-            <article>
-                <figure>
-                    <img src="image/T-shirt.png" style="width: 300px; height: 350px;"
-                        alt="T-shirt for bouys in multi colors">
-                    <figcaption> T-shirt vol.1 </figcaption>
-                    <p>T-Shirt</p>
-                    <p>100% Pure cotton</p>
-                    <p>Made in India</p>
+        <div id="mainp">
+            <div>
+                <img src="image/T-shirt.png" style="width: 300px; height: 350px;"
+                    alt="T-shirt for bouys in multi colors">
+                <img src="image/T-shirt.png" style="width: 300px; height: 350px;"
+                    alt="T-shirt for bouys in multi colors">
+            </div>
+            <div id="mainpabout">
+                <p>T-Shirt</p>
+                <p>100% Pure cotton</p>
+                <p>Made in India</p>
 
-                    <p>Price:<del>&#8377 1499</del> <strong>&#8377 999</strong> </p>
-                    <p>&#8377 500 off</p>
-                    <br>
-                    <!---------oder related ------------>
-                    <strong>FAQs</strong>
+                <p>Price:<del>&#8377 1499</del> <strong>&#8377 999</strong> </p>
+                <p>&#8377 500 off</p>
+                <br>
+                <!---------oder related ------------>
+                <strong>FAQs</strong>
+                <div>
+                    <P>
+                        10 days Exchange
+                    </P>
+                    <P>
+                        Free Delivery above &#8377 1599
+                    </P>
+                    <p>
+                        VASMU-DELIVERY in 7days
+                    </p>
+                    <P>
+                        Secure transaction
+                    </P>
+                    <a href="#sizechart">SIZE CHART</a>
+                </div>
+                <!-----size--------->
+                <label for="Size">Choose Size</label>
+                <select name="Size" id="Size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                </select>
+                <br>
+                <!----color--------->
+                <label for="color">Choose color</label>
+                <select name="color" id="color">
+                    <option value="white">WHITE</option>
+                    <option value="black">BLACK</option>
+                    <option value="Red">RED</option>
+                    <option value="Yellow">YELLOW</option>
+                    <option value="light blue">LIGHT BLUE</option>
+                </select>
+                <BR><br>
+                <a href="index.html"><button>PREVICE</button></a>
+                <button>Add to Cart</button>
+            </div>
+
+        </div>
+        <!---------Ratings------------->
+        <div id="rating">
+            <fieldset>
+                <strong>Ratings & Reviews</strong>
+                <fieldset>
                     <div>
-                        <P>
-                            10 days Exchange
-                        </P>
-                        <P>
-                            Free Delivery above &#8377 1599
-                        </P>
-                        <p>
-                            VASMU-DELIVERY in 7days
-                        </p>
-                        <P>
-                            Secure transaction
-                        </P>
+
+                        <strong>VASMU</strong>
+                        <span>★★★★★</span>
+                        <p>Super soft fabric. The print quality is excellent. It survived three washes
+                            without
+                            fading.</p>
                     </div>
-                    <!-----size--------->
-                    <label for="Size">Choose Size</label>
-                    <select name="Size" id="Size">
-                        <option value="S">S</option>
-                        <option value="M">M</option>
-                        <option value="L">L</option>
-                        <option value="XL">XL</option>
-                        <option value="XXL">XXL</option>
-                    </select>
-                    <br>
-                    <!----color--------->
-                    <label for="color">Choose color</label>
-                    <select name="color" id="color">
-                        <option value="white">WHITE</option>
-                        <option value="black">BLACK</option>
-                        <option value="Red">RED</option>
-                        <option value="Yellow">YELLOW</option>
-                        <option value="light blue">LIGHT BLUE</option>
-                    </select>
-                    <BR><br>
-                    <a href="product.html"><button>PREVICE</button></a>
-                    <button>Add to Cart</button>
-                    <br>
-                    <br>
-
-                    <!---------size-chart---------------->
-
-                    <table BORDER="10" BORDER-COLLAPSE="collapse"
-                        style="background-image: url(https://tse3.mm.bing.net/th/id/OIP.5hTvWXhoYrzHf0gMi1YyzAHaKW?r=0&rs=1&pid=ImgDetMain&o=7&rm=3); background-repeat: no-repeat; background-size: cover;">
-                        <tr>
-                            <Td colspan="5" style="text-align: center;font-weight: bolder;">Size Chart</Td>
-                        </tr>
-                        <tr>
-                            <td colspan="5" style="text-align: center;font-weight: bold;">IN Regular</td>
-                        </tr>
-                        <tr>
-                            <td>Brand Size</td>
-                            <td>Chest(in)</td>
-                            <td>Sleeve Length (in)</td>
-                            <td>Hem (in)</td>
-                            <td>Length (in)</td>
-                        </tr>
-                        <tr>
-                            <td>S</td>
-                            <td>42</td>
-                            <td>8</td>
-                            <td>42</td>
-                            <td>27</td>
-
-                        </tr>
-                        <tr>
-                            <td>M</td>
-                            <td>44</td>
-                            <td>9</td>
-                            <td>44</td>
-                            <td>28</td>
-                        </tr>
-                        <tr>
-                            <td>L</td>
-                            <td>46</td>
-                            <td>9</td>
-                            <td>46</td>
-                            <td>29</td>
-                        </tr>
-                        <tr>
-                            <td>XL</td>
-                            <td>48</td>
-                            <td>10</td>
-                            <td>48</td>
-                            <td>30</td>
-                        </tr>
-                        <tr>
-                            <td>XXL</td>
-                            <td>50</td>
-                            <td>11</td>
-                            <td>50</td>
-                            <td>31</td>
-                        </tr>
-                    </table>
-                    </fieldset>
-                    <br>
-                    <br>
-
-                    <!---------Ratings------------->
-                    <fieldset>
-                        <strong>Ratings & Reviews</strong>
-                        <fieldset>
-                            <div>
-
-                                <strong>VASMU</strong>
-                                <span>★★★★★</span>
-                                <p>Super soft fabric. The print quality is excellent. It survived three washes without
-                                    fading.</p>
-                            </div>
-                        </fieldset>
-                        <fieldset>
-                            <div>
-                                <strong>Ammu</strong>
-                                <span>★★★★★</span>
-                                <p>Perfect oversized fit. Most brands just make them wide, but this has the perfect
-                                    length
-                                    too.</p>
-                            </div>
-                        </fieldset>
-                        <fieldset>
-                            <div>
-                                <strong>Anamika</strong>
-                                <span>★★★★★</span>
-                                <p>The cotton is heavy and feels premium. Definitely worth the price. Proud it is made
-                                    in
-                                    India.</p>
-                            </div>
-                        </fieldset>
-                        <fieldset>
-                            <div>
-                                <strong>Anshika</strong>
-                                <span>★★★★★</span>
-                                <p>Bought this for my sister. She loves the streetwear vibe. The ₹400 discount made it a
-                                    steal.</p>
-                            </div>
-                        </fieldset>
-                        <fieldset>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <strong>Ammu</strong>
+                        <span>★★★★★</span>
+                        <p>Perfect oversized fit. Most brands just make them wide, but this has the perfect
+                            length
+                            too.</p>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <strong>Anamika</strong>
+                        <span>★★★★★</span>
+                        <p>The cotton is heavy and feels premium. Definitely worth the price. Proud it is
+                            made
+                            in
+                            India.</p>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <strong>Anshika</strong>
+                        <span>★★★★★</span>
+                        <p>Bought this for my sister. She loves the streetwear vibe. The ₹400 discount made
+                            it a
+                            steal.</p>
+                    </div>
+                </fieldset>
+                <fieldset>
 
 
-                            <div>
-                                <strong>Samira</strong>
-                                <span>★★★★★</span>
-                                <p>Exactly like the pictures. It is super breathable for summers. Going to order another
-                                    color soon.
-                                </p>
+                    <div>
+                        <strong>Samira</strong>
+                        <span>★★★★★</span>
+                        <p>Exactly like the pictures. It is super breathable for summers. Going to order
+                            another
+                            color soon.
+                        </p>
 
-                            </div>
+                    </div>
+
+
+                </fieldset>
         </div>
 
-        </fieldset>
-        </figure>
-        </article>
-        </div>
         <!-----------other items------>
         <!------product1--------->
         <div id="product">
@@ -252,6 +203,64 @@
                 </figure>
             </article>
 
+            <!---------size-chart---------------->
+
+            <div id="sizechart">
+                <table BORDER="10" BORDER-COLLAPSE="collapse"
+                    style="background-image: url(https://tse3.mm.bing.net/th/id/OIP.5hTvWXhoYrzHf0gMi1YyzAHaKW?r=0&rs=1&pid=ImgDetMain&o=7&rm=3); background-repeat: no-repeat; background-size: cover;">
+
+                    <Td colspan="5" style="text-align: center;font-weight: bolder;">Size Chart</Td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" style="text-align: center;font-weight: bold;">IN Regular</td>
+                    </tr>
+                    <tr>
+                        <td>Brand Size</td>
+                        <td>Chest(in)</td>
+                        <td>Sleeve Length (in)</td>
+                        <td>Hem (in)</td>
+                        <td>Length (in)</td>
+                    </tr>
+                    <tr>
+                        <td>S</td>
+                        <td>42</td>
+                        <td>8</td>
+                        <td>42</td>
+                        <td>27</td>
+
+                    </tr>
+                    <tr>
+                        <td>M</td>
+                        <td>44</td>
+                        <td>9</td>
+                        <td>44</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>L</td>
+                        <td>46</td>
+                        <td>9</td>
+                        <td>46</td>
+                        <td>29</td>
+                    </tr>
+                    <tr>
+                        <td>XL</td>
+                        <td>48</td>
+                        <td>10</td>
+                        <td>48</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>XXL</td>
+                        <td>50</td>
+                        <td>11</td>
+                        <td>50</td>
+                        <td>31</td>
+                    </tr>
+                </table>
+                </fieldset>
+            </div>
+
     </main>
 
     <!-------Footer--------->
@@ -280,9 +289,10 @@
         </div>
         <div id="copyright">
             <p>&copy;2026-27 VASMU-STORE & All right reserved</p>
-            <p>Web developed & managed by <a href="https://www.vishujeetkumar.free.nf">Vishujeet kumar</a></p>
+            <p>Web developed & managed by <a href="https://vishujeetkumar.free.nf">Vishujeet kumar</a></p>
         </div>
     </footer>
+
 
 </body>
 
