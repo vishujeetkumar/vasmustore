@@ -18,7 +18,8 @@ header {
     flex-wrap: wrap;
 }
 
-header h1{display: flex;
+header h1 {
+    display: flex;
     align-content: start;
 }
 
@@ -74,12 +75,12 @@ nav button a {
     color: yellow;
     text-align: center;
     position: fixed;
-    right: 85px;
+    right: 15px;
     bottom: 30px;
     z-index: 1;
 }
 
-/* form & location */
+/*location */
 #location {
 
     display: flex;
@@ -87,8 +88,6 @@ nav button a {
     padding: 5px;
     font-size: large;
     gap: 10vw;
-    width: 80%;
-    height: 100%;
     object-fit: contain;
 }
 
@@ -100,6 +99,7 @@ nav button a {
     border-radius: 15px 0 15px 0;
     padding: 5px;
 }
+
 #inquiry h2 {
     justify-content: space-between;
     font-style: italic;
@@ -118,6 +118,9 @@ footer {
     border-radius: 5px;
     font-family: monospace;
     font-weight: 250;
+    width: 100vw;
+    justify-content: center;
+
 }
 
 #nav1 {
@@ -127,7 +130,7 @@ footer {
     color: rgb(24, 21, 25);
     column-gap: 20px;
     padding: 0 30px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #copyright {
@@ -135,4 +138,320 @@ footer {
     color: blueviolet;
     text-align: center;
 
+}
+
+/* #HEADER AND FOOTER CSS ABOVE # */
+
+
+/* new drop prodcut */
+
+#newdrop {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3%;
+    gap: 20px;
+    justify-content: space-around;
+    width: 80wv;
+    margin: 80px;
+    border: 2px solid lightgoldenrodyellow;
+    background-image: radial-gradient(#6af5e7, rgb(247, 170, 170));
+    box-shadow: 2px 2px 2px 15px rgb(247, 170, 170);
+}
+
+#newdrop div#newdroptext {
+    justify-content: center;
+    align-self: center;
+    border-radius: 1px;
+    align-content: center;
+    background-image: radial-gradient(#6af5e7, rgb(247, 170, 170));
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 5px 4px 9px 15px #6af5e7;
+}
+
+#newdroptext {
+    border: 1px solid #6af5e7;
+    height: 150px;
+}
+
+#newdroptext h2 {
+    border: 1px solid #6af5e7;
+    /* border-radius: 5px; */
+    width: 50vw;
+    background-color: #5c9ce0;
+    text-align: center;
+    font-family: cursive;
+
+    margin: 4px;
+}
+
+#newdroptext h3 {
+    border: 1px solid #6af5e7;
+    border-radius: 5px;
+    margin: 5px;
+    text-align: center;
+    justify-content: center;
+    color: rgb(28, 11, 218);
+    font-weight: bolder;
+}
+
+#newdroptext h4 {
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 15px;
+    width: 140px;
+    gap: 5px;
+
+}
+
+#newdrop h4 a {
+    color: yellow;
+    font-weight: bolder;
+    border: 1px solid yellow;
+    background-color: yellow;
+    border-radius: 100%;
+    box-shadow: 1px 0 1px 1px yellow;
+}
+
+#newdropimg {
+    border: 1px solid rgba(194, 239, 104, 0.881);
+    background-color: rgba(194, 239, 104, 0.881);
+    box-shadow: 2px 2px 10px 12px rgb(247, 170, 170);
+    padding: 5px;
+    border-radius: 5px;
+    align-self: last baseline;
+}
+
+/* product css below  */
+
+
+#product {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 15px;
+    width: 100vw;
+}
+
+#product article {
+    border: 1px solid lightblue;
+    background-image: url(https://tse3.mm.bing.net/th/id/OIP.WNCcqbMGKMdsNZ4AjkvnmwHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3);
+    padding: 10px;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#product figcaption {
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: Tahoma, sans-serif;
+    text-shadow: 2px 2px 3px #5c9ce0;
+}
+
+#product p {
+    font-family: Arial, sans-serif;
+    font-weight: lighter;
+}
+
+#product button {
+    padding: 5px;
+    color: beige;
+    background-color: rgba(195, 24, 24, 0.812);
+    border-radius: 2px;
+    border-color: rgba(195, 24, 24, 0.812);
+}
+
+/* BEST SELLER TABLE CSS CODE BELOW*/
+#sellertable {
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20250402/pngtree-upward-trending-growth-graph-business-success-visualization-image_17164623.jpg);
+    color: rgb(251, 252, 246);
+    text-align: center;
+    font-style: oblique;
+    font-variant: small-caps;
+    font-weight: bolder;
+    font-size: large;
+    margin: auto;
+    width: 50vw;
+    height: 55vh;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    box-shadow: 5px 9px 15px 9px #5c9ce0;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+/* why vasmu store  */
+
+
+#why {
+    background-image: url(https://img.freepik.com/premium-photo/blurred-blue-abstract-background_7182-1373.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid lightblue;
+    text-align: center;
+    font-style: oblique;
+    font-variant: small-caps;
+    font-weight: bolder;
+    font-size: large;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    padding: 35px;
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+
+#why h2 {
+    font-family: cursive;
+    margin-bottom: 15px;
+    color: #0677ef;
+    box-shadow: 1px 1px 1px 1px #0677ef;
+
+}
+
+#why p {
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+
+#why ul {
+    font-size: large;
+    font-weight: lighter;
+}
+
+
+/* why and promise in flexbox uses  */
+
+#whypromise {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* flex-direction: row; */
+    /* justify-content: space-evenly; */
+}
+
+/* we company promise */
+
+#promise {
+    background-image: url(https://img.freepik.com/premium-photo/blurred-blue-abstract-background_7182-1373.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid lightblue;
+    text-align: center;
+    font-style: oblique;
+    font-variant: small-caps;
+    font-weight: bolder;
+    font-size: large;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    padding: 35px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+#promise h3 {
+    color: #0677ef;
+    box-shadow: 1px 1px 1px 1px #0677ef;
+    font-family: cursive;
+}
+
+#promise dt {
+    text-align: start;
+    font-family: sans-serif;
+    margin: 10px 0;
+}
+
+#promise dd {
+    text-align: justify;
+}
+
+
+
+/* <!-------Early DROp Access-------> */
+
+#early {
+    background-image: radial-gradient(rgb(247, 242, 242), whitesmoke, lightblue, rgb(183, 183, 226));
+    padding: 40px 20px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /* Unified font system */
+}
+
+#early h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+#early p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#early form {
+    max-width: 400px;
+    margin: 0 auto;
+    /* Centers the form content */
+    display: flex;
+    flex-direction: column;
+    /* Stacks elements vertically */
+    align-items: center;
+}
+
+#early label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+#early input[type="email"] {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+#early form button {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    /* Enhanced padding for better tap target */
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+#early form button:hover {
+    background-color: #e33f3f;
+    /* Darkens button on hover */
+}
+
+#early small {
+    display: block;
+    /* Forces each disclaimer onto a new line */
+    color: #666;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+#early form p {
+    margin-top: 25px;
+    font-style: italic;
+    font-size: 0.95rem;
 }
