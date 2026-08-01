@@ -1,0 +1,512 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://wallpapercave.com/wp/wp7312732.jpg);
+    background-size: cover;
+
+}
+
+/* header  */
+header {
+    background-color: black;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    color: white;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+header h1:hover {
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.5);
+    padding: 5px;
+    color: lightblue;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+header a:hover {
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.5);
+    padding: 5px;
+}
+
+/* main  */
+
+.hero-grid {
+    margin: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 calc(33.33% - 50px);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    justify-content: space-between;
+}
+
+.hero-grid:hover {
+    transform: scale(1.05);
+    border-left: 5px solid lightblue;
+}
+
+.hero-grid p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hero-grid p:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.5);
+    padding: 5px;
+}
+
+.hero-grid h1 {
+    font-size: 40px;
+    color: red;
+    text-align: start;
+    font-family: cursive
+}
+
+.hero-grid h1:hover {
+    color: red;
+    text-shadow: 0 0 10px lightblue;
+}
+
+.hero-grid h2 {
+    font-size: 30px;
+    text-align: start;
+    font-family: cursive;
+}
+
+.hero-grid h2:hover {
+    color: lightblue;
+    text-shadow: 0 0 10px lightblue;
+
+}
+
+.hero-grid img {
+    border-radius: 10px;
+}
+
+.hero-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px lightblue;
+    border-left: 4px solid blue;
+}
+
+.hero-text {
+    margin: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    border-left: 4px solid lightblue;
+    background-color: rgba(80, 90, 237, 0.753);
+    padding: 20px;
+    border-radius: 10px;
+    color: rgb(249, 251, 245);
+    text-align: start;
+    font-size: large;
+}
+
+.hero-text:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px lightblue;
+    border-left: 4px solid blue;
+}
+
+.hero-buttons {
+    margin-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    border-radius: 10px;
+}
+
+.hero-buttons button {
+    background-color: rgba(14, 68, 161, 0.81);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    font-family: cursive;
+    border-left: 4px solid yellow;
+}
+
+.hero-buttons button:hover {
+    background-color: rgba(14, 68, 161, 0.81);
+    transform: scale(1.05);
+    box-shadow: 0 0 10px lightblue;
+    border-left: 4px solid white;
+}
+
+/* skill  */
+
+.skill {
+    margin: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    color: rgb(249, 251, 245);
+    text-align: start;
+    font-size: large;
+}
+
+.skill h3 {
+    font-size: 30px;
+    text-align: start;
+}
+
+.skill-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    border: 4px solid lightblue;
+    background-image: url(https://wallpapercave.com/wp/wp7312732.jpg);
+    background-size: cover;
+    padding: 20px;
+    border-radius: 10px;
+    color: rgb(249, 251, 245);
+    text-align: start;
+    font-size: large;
+    justify-content: start;
+}
+
+.skill-grid:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 4px lightblue;
+    border-left: 4px solid blue;
+}
+
+.skill-grid button {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    border-left: 4px solid lightblue;
+    background-image: url(https://tse1.mm.bing.net/th/id/OIP.AokGcy_BEacxqassUxAnRgHaQC?r=0&rs=1&pid=ImgDetMain&o=7&rm=3);
+    background-size: cover;
+    padding: 20px;
+    border-radius: 10px;
+    color: rgb(249, 251, 245);
+    text-align: center;
+    font-size: large;
+    width: 150px;
+}
+
+.skill-grid button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px lightblue;
+    border-left: 4px solid yellow;
+}
+
+/* project  */
+
+
+.project {
+    margin: 5%;
+    display: flex;
+    flex-wrap: wrap;
+
+    border-radius: 10px;
+    color: rgb(249, 251, 245);
+    text-align: start;
+    font-size: large;
+}
+
+.project h3 {
+    font-size: 30px;
+    text-align: start;
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    border: 4px solid lightblue;
+    background-image: url(https://wallpapercave.com/wp/wp7312732.jpg);
+    background-size: cover;
+    padding: 20px;
+    border-radius: 10px;
+    color: rgb(249, 251, 245);
+    text-align: start;
+    font-size: large;
+    justify-content: start;
+}
+
+.project-grid:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 4px lightblue;
+    border-left: 4px solid blue;
+}
+
+.project-grid button {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    border-left: 4px solid lightblue;
+    background-image: url(https://tse1.mm.bing.net/th/id/OIP.AokGcy_BEacxqassUxAnRgHaQC?r=0&rs=1&pid=ImgDetMain&o=7&rm=3);
+    background-size: cover;
+    padding: 20px;
+    border-radius: 10px;
+    color: rgb(249, 251, 245);
+    text-align: center;
+    font-size: large;
+    width: 150px;
+}
+
+.project-grid button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px lightblue;
+    border-left: 4px solid yellow;
+}
+
+
+/* Education  */
+
+
+.education {
+    margin: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    color: rgb(249, 251, 245);
+    text-align: start;
+    font-size: large;
+}
+
+.education h3 {
+    font-size: 30px;
+    text-align: start;
+}
+
+.education p {
+    text-align: start;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#inbox {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    flex-wrap: wrap;
+    border: 4px solid lightblue;
+    background-image: url(https://wallpapercave.com/wp/wp7312732.jpg);
+    background-size: cover;
+    padding: 3px;
+    border-radius: 10px;
+    color: rgb(249, 251, 245);
+    text-align: start;
+    font-size: large;
+    justify-content: start;
+    text-wrap: wrap;
+    width: 40vw;
+}
+
+#inbox:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 4px lightblue;
+    border-left: 4px solid blue;
+}
+
+.education-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    width: fit-content;
+}
+
+.education-grid button {
+    /* margin: 5%; */
+    border: 2px solid lightblue;
+    background-image: url(https://tse1.mm.bing.net/th/id/OIP.AokGcy_BEacxqassUxAnRgHaQC?r=0&rs=1&pid=ImgDetMain&o=7&rm=3);
+    background-size: cover;
+    padding: 4px;
+    border-radius: 150px;
+    color: rgb(249, 251, 245);
+    text-align: center;
+    font-size: medium;
+    width: fit-content;
+}
+
+.education-grid button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px lightblue;
+    border: 2px solid yellow;
+}
+
+#button {
+    display: flex;
+    gap: 10px;
+}
+
+/* about me   */
+
+.about {
+    margin: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    color: rgb(249, 251, 245);
+    text-align: start;
+    font-size: large;
+}
+
+.about h3 {
+    font-size: 30px;
+    text-align: start;
+}
+
+.about-grid {
+    margin-left: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(249, 251, 245);
+    text-align: start;
+    font-size: large;
+    justify-content: start;
+}
+
+#about-box {
+    margin: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    text-wrap: wrap;
+    border: 3px solid lightblue;
+    background-color: beige;
+    background-size: cover;
+    border-radius: 5px;
+    color: rgb(14, 15, 12);
+    text-align: center;
+    font-size: large;
+    justify-content: center;
+    width: 20vw;
+    font-family: cursive;
+}
+
+#about-box:hover {
+    border-left: 4px solid red;
+    background-color: aqua;
+}
+
+
+/* contact  */
+
+.contact {
+    margin: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    color: rgb(249, 251, 245);
+    text-align: start;
+    font-size: large;
+}
+
+#contact {
+    margin-top: 5%;
+    margin-left: -5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(249, 251, 245);
+    text-align: start;
+    font-size: large;
+    justify-content: start;
+}
+
+#contact button {
+    margin: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    text-wrap: wrap;
+    gap: 50px;
+    border: 3px solid lightblue;
+    background-color: beige;
+    background-size: cover;
+    padding: 10p;
+    border-radius: 5px;
+    color: rgb(14, 15, 12);
+    text-align: center;
+    font-size: large;
+    justify-content: center;
+    width: 20vw;
+    font-family: cursive;
+    cursor: pointer;
+
+}
+
+#contact button:hover {
+    transform: scale(1.05);
+    border-left: 5px solid red;
+}
+
+/* Declaration  */
+.declaration {
+    margin: 5%;
+    color: whitesmoke;
+}
+
+#declaration {
+    margin-top: 5%;
+    /* display: flex; */
+    flex-wrap: wrap;
+    gap: 50px;
+    flex: 1 1 calc(33.33% - 50px);
+    background-color: rgba(29, 26, 26, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    justify-content: space-between;
+    font-family: cursive;
+    width: fit-content;
+    border-left: 5px solid lightblue;
+}
+
+#declaration:hover {
+    transform: scale(1.05);
+    border-left: 5px solid yellow;
+
+}
+
+footer {
+    background-color: black;
+    color: antiquewhite;
+    text-align: center;
+    padding: 10px;
+}
